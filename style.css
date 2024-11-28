@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+    font-family: "Be Vietnam Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8faf6; 
+    color: #0c1109; 
+    overflow-x: hidden; 
+}
+
+header {
+    background-color: #7ac143; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: #f8faf6;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+#nav_logo {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #083c82;
+    -webkit-background-clip: text;
+    text-align: center;
+    position: relative;
+}
+
+#nav_logo2{
+    font:'Be Vietnam Pro';
+    color:#083c82;
+    background: linear-gradient(45deg, #7ac143, #0288d1);
+}
+
+.nav_list {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-item a{
+    color: #1d1d1dad;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+    color: #083c82;
+}
+
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background: #083c82;
+    margin: 8px;
+}
+
+@media (max-width: 999px) {
+    
+    body{
+        overflow-x: hidden;
+
+    }
+
+    .nav_list{
+        position: absolute;
+        top: 8vh;
+        right: 0;
+        width: 50vw;
+        height: 92vh;
+        background: #7ac143;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        transform: translateX(100%);
+    }
+
+    .nav_list li{
+        margin-left: 0;
+        opacity: 0;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+    
+    .nav_list.active{
+        transform: translateX(0);
+
+    }
+}
