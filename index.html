@@ -4,23 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="menu.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
     <title>Prossperari | Consultoria Financeira</title>
 </head>
 <body>
     <header>
+        <nav id="navbar">
             <div>
             <h1><i class="fa-solid fa-p" id="nav_logo">rossperari</i></h1>
             <p id="nav_logo2">Consultoria Financeira</p>
             </div>
-            <nav>
-                <div class="mobile-menu">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-                <ul class="nav_list">
+                <ul id="nav_list">
                     <li class="nav-item">
                         <a href="#home">Home</a>
                     </li>
@@ -34,14 +32,144 @@
                         <a href="#contact">Contato</a>
                     </li>
                 </ul>
+                <button id="mobile_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
             </nav>
+            <div id="mobile_menu">
+                <ul id="mobile_nav_list">
+                    <li class="nav-item">
+                        <a href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#menu">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
     </header>
-    <main>
+    <main id="content">
+        <section id="home">
+            <div id="cta">
+                <h1 class="title">Prospere com a 
+                    <span>Prossperari</span>
+                </h1>
+                <p class="description">Na Prossperari, transformamos desafios financeiros em oportunidades de crescimento. 
+                    Oferecemos soluções personalizadas para gestão, planejamento e educação financeira, ajudando pessoas e empresas a alcançarem seus objetivos com segurança e eficiência. 
+                    Conte com nossa expertise para prosperar financeiramente e conquistar o futuro que você merece.
+                </p>
+
+                <div id="cta_buttons">
+                    <a href="" class="phone_button">
+                        <button class="btn-default">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        </button>
+                        Fale Com Um Consultor
+                    </a>
+                    <a href="tel:+55(82)99347-7707" class="phone_button">                        
+                        <button class="btn-default">
+                            <i class="fa-solid fa-phone"></i>
+                        </button>
+                        0800 123 4567
+                    </a>
+                </div>
+                <div class="social-media-buttons">
+                    <a href="">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div id="banner">
+                <img src="https://img.freepik.com/fotos-gratis/papelada_1098-18063.jpg?t=st=1732908460~exp=1732912060~hmac=dbdaece36df42c810cbda4d99c1a8832e2b12a16b39e73ef2d5a00486e5a81eb&w=900" alt="">
+            </div>
+        </section>
+
+        <section id="menu">
+            <h2 class="section-title">Nossos Serviços</h2>
+            <h3 class="section-subtitles">Confira os Serviços Mais Requisitados</h3>
+
+            <div id="services">
+                <div class="service">
+                    <div class="service-gem">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+
+                    <img src="planejamento.png" class="service-image" alt="">
+
+                    <h3 class="service-title">
+                        Planejamento Financeiro
+                    </h3>
+                    <span class="service-description">
+                        Alcance suas metas com segurança através de um planejamento personalizado.
+                    </span>
+
+                    
+                </div>
+                <div class="service">
+                    <div class="service-gem">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+
+                    <img src="montagemdecarteira.png" class="service-image" alt="">
+
+                    <h3 class="service-title">
+                        Montagem profissional de carteira
+                    </h3>
+                    <span class="service-description">
+                        Construa uma carteira otimizada por especialistas do mercado.
+                    </span>
+                </div>
+                <div class="service">
+                    <div class="service-gem">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+
+                    <img src="dividas.png" class="service-image" alt="">
+
+                    <h3 class="service-title">
+                        Quitação de dívidas da forma mais barata
+                    </h3>
+                    <span class="service-description">
+                        Na Prossperari nós ajudamos você a sair das dívidas e se planejar financeiramente.
+                    </span>
+
+                    
+                </div>
+                <div class="service">
+                    <div class="service-gem">
+                        <i class="fa-solid fa-gem"></i>
+                    </div>
+
+                    <img src="financiamento.png" class="service-image" alt="">
+
+                    <h3 class="service-title">
+                        Financiamento imobiliário e crédito
+                    </h3>
+                    <span class="service-description">
+                        As melhores opções de financiamento e crédito para sua PJ.
+                    </span>
+
+                    
+                </div>
+            </div>
+        </section>
 
     </main>
     <footer>
 
     </footer>
-    <script src="mobile.js"></script>    
+    <script src="script.js"></script>    
 </body>
 </html>
