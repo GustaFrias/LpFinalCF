@@ -1,3 +1,5 @@
+#LPFinal
+
 Este projeto é uma landing page responsiva desenvolvida para apresentar os serviços de consultoria financeira, captar leads e transmitir credibilidade aos clientes.
 
 🚀 Funcionalidades
